@@ -18,7 +18,7 @@ class RubiksCube222Env(gym.Env):
         self.cube_state = None
         # spaces
         self.action_space = spaces.Discrete(3)
-        self.observation_space = spaces.Discrete(3674160)
+        self.observation_space = spaces.Discrete(1000000) #3674160
 
         state_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), "rubiks_cube_222_states_FRU.pickle")
         if not os.path.exists(state_file):
